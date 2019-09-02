@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>HelpAChild Foundation</title>
+	<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+    var maxLength = 40;
+    $(".show-read-more").each(function(){
+        var myStr = $(this).text();
+        if($.trim(myStr).length > maxLength){
+            var newStr = myStr.substring(0, maxLength);
+            var removedStr = myStr.substring(maxLength, $.trim(myStr).length);
+            $(this).empty().html(newStr);
+            $(this).append(' <a href="javascript:void(0);" class="read-more">read more...</a>');
+            $(this).append('<span class="more-text">' + removedStr + '</span>');
+        }
+    });
+    $(".read-more").click(function(){
+        $(this).siblings(".more-text").contents().unwrap();
+        $(this).remove();
+    });
+});
+</script>
+<style type="text/css">
+    .show-read-more .more-text{
+        display: none;
+    }
+</style>
+</head>
+<body>
+	<img src="https://res.cloudinary.com/enema/image/upload/v1567243768/21631659089_6d03ac524a_k_gaapw0.jpg" width="400" height="400" align="right">
+	<p>
+		Our goal is to create an initiative 
+		to help victims of child abuse and prevent occurrence in the country
+	</p>
+	<style type="text/css">
+		p{
+			position: relative;
+			top:250px;
+			text-align: center;
+			font-family: Arial, Helvetica, sans-serif;
+			font-size: 50px;
+			margin: 0px;
+			padding: 0px;
+		}
+	</style>
+<div>
+	<img src="https://res.cloudinary.com/enema/image/upload/v1567324492/screencapture-figma-file-QnEqHslbu9MLqeAm8O0Kq4-NGO-2019-08-30-23_42_33_cucv2e.png" width="70" height="300" align="right">
+	</div>
+	<h2>Why Ratanka?</h2>
+		<style type="text/css">
+			h2{
+				text-align: center;
+			position: relative;
+			top: 550px;
+			text-align: center;
+			font-family: Arial, Helvetica, sans-serif;
+			font-size: 50px;
+			}
+		</style>
+			<div>
+			<br>
+			<div>
+			Over the years, Ratanka has been the No. 1 child care NGO, we have gained the trust of Nigerians who want to make impact in the lives of children who are suffering and are in dire need through our standard child care policies and implementation strategies which ensures that all set goals are achieved within a stipulated period of time.
+			<style type="text/css"> 
+			div{
+				text-align: left;
+				position: relative;
+				top: 250px;
+				font-family: Arial, Helvetica, sans-serif;
+				font-size: 30px;
+				word-spacing: 0.0em;
+				justify-content: text;
+				font-size: 30px
+
+			} 
+		</style>
+			</div>
+			<div>
+				<h3>Child Social Integration</h3>
+				</div>
+		<div>
+		<img src="https://res.cloudinary.com/enema/image/upload/v1567243802/group-of-happy-african-children-east-africa-hadynyah_catgai.jpg" width="150" height="150">
+		
+		<style type="text/css">
+			.responsive {
+  		width: 100%;
+  		height: auto;
+  		position: relative;
+  		top: -50px
+		}
+		</style>
+		<style type="text/css">
+			h3{
+				position: relative;
+				top: 250px;
+			}
+		</style>
+<p>
+			<section>
+			<q><i>The survival, growth, development and participation are the rights of every child, to protect and fulfill these rights, budgets, laws and social policies that promote equity are required.</q></i>
+
+			Nigeria is beset by high levels of disparity in terms of access to social services and income distribution. Disparities are socio-economic – linked among others to types of employment and levels of education of the parents– as well as geographic, mainly <span id="dots">...</span><span id="more">between North and South and between rural and urban areas. Gender inequality is pervasive in Nigeria, in terms of political representation, access to and control over land, credit facilities, technologies, education and health. Large numbers of people live in poverty, both monetary and multidimensional.
+			Design and implement more effective and equitable policies and interventions to help realize the rights of all children, and help monitor their impact.
+
+			Ensure that public finance delivers results for children, through effective, equitable and child-focused social sector planning and spending.
+			Build local capacity and strengthen community participation to promote inclusiveness and avoid discrimination.</span></p>
+			<button onclick="myFunction()" id="myBtn">Read more</button>
+			<style type="text/css">
+			#more {display: none;}
+			</style>
+			<script>
+			function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
+}
+			</script>
+			</section>
+
+		</p>
+
+</body>
+</html>
